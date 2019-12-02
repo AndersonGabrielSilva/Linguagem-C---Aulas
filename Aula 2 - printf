@@ -1,0 +1,61 @@
+#include <stdio.h>
+#include <stdlib.h>
+/*
+ int main ()
+ {
+
+ printf ("                                                                 #####\n");
+ printf ("                                                                #######\n");
+ printf ("                                                                #######\n");
+ printf (" ######          ###                                           #VVVVV#\n");
+ printf ("    ##             #                                          ##  VVV  ##\n");
+ printf ("    ##         ###    ### ####   ###    ###  ##### #####     #          ##\n");
+ printf ("    ##        #  ##    ###    ##  ##     ##    ##   ##      #            ##\n");
+ printf ("    ##       #   ##    ##     ##  ##     ##      ###        #            ###\n");
+ printf ("    ##          ###    ##     ##  ##     ##      ###       QQ#           ##Q\n");
+ printf ("    ##       # ###     ##     ##  ##     ##     ## ##    QQQQQQ#       #QQQQQQ\n");
+ printf ("    ##      ## ### #   ##     ##  ###   ###    ##   ##   QQQQQQQ#     #QQQQQQQ\n");
+ printf ("  ############  ###   ####   ####   #### ### ##### #####   QQQQQ#######QQQQQ\n");
+return 0;
+ }
+*/
+/*
+int main ()
+{
+    printf ("\t\tMusica - Virgo Dei Genitrix\n\n\n");
+    printf ("\tVirgo Dei Genitrix, quem totus non capit orbis\n\n");
+    printf ("\tIn tua se clausit viscera factus homo\n\n");
+    printf ("\tVera fides Geniti purgavit crimina mundi,\n\n");
+    printf ("\tEt tibi virginitas inviolata manet\n\n");
+    printf ("\tTe matrem pietatis, opem te clamitat orbis\n\n");
+    printf ("\tSubvenias famulis, O benedicta, tuis\n\n");
+    printf ("\tSubvenias famulis, O benedicta, tuis\n\n");
+    printf ("\tSpiritui Sancto gloria magna Deo\n\n\n");
+    printf ("\t\t\tAmem\n");
+    return 0;
+}
+*/
+
+int main ()
+{
+    int segcanal1;//seguidores do primeiro canal
+    int segcanal2;//seguidores do segundo canal
+    int segcanal12;//soma dos seguidores do primeiro e segundo canal
+    int soma;// calculo
+
+    printf ("\t\t**********************************************************\n");
+    printf ("\n\t\tPrograma de calculo de soma de seguidores de dois canais\n");
+    printf ("\n\t\t********************************************************\n");
+    printf ("\n Quantos seguidores seguem o primeiro canal ?\n");
+    scanf  ("%d", &segcanal1);
+    printf ("\t\t\nQuantos seguidores seguem o segundo canal ?\n");
+    scanf  ("%d", &segcanal2);
+    printf ("\t\t\nQuantos seguidores seguem ambos os canais ?\n");
+    scanf  ("%d", &segcanal12);
+
+    soma = segcanal1 + segcanal2 - segcanal12;
+
+    printf ("\t\t\nO novo canal havera %d de seguidores", soma);
+    return 0;
+}
+*/
