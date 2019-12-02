@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+
+{
+    int numero;
+    int resto;
+
+    printf ("\n Digite um numero par maior que dois ");
+    scanf  ("%d", &numero);
+
+    resto = numero %2;
+
+        if ((resto == 0) && (numero >2))
+        {
+        printf ("\n O Numero %d é par e é maior que dois", numero);
+        }else {
+        printf ("\n O numero %d não é par e nem maior que dois", numero);
+        }
+        return 0;
+}
