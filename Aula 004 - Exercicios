@@ -1,0 +1,318 @@
+/ Exibindo tabuada de 0 a 10
+
+
+int main ()
+{
+int contador =0;
+int x = 0;
+
+    //do {
+
+    for (contador=0;contador<=10;contador++){
+
+        printf ("\n");
+
+        for (x=0;x<=10;x++)
+    {
+        printf ("\n%d X %d = %d", contador,x, x*contador);
+    }}
+
+  //  }while (contador<=10);
+
+
+return 0;
+}
+
+// Exercicio 04
+/*
+int main ()
+{
+    float peso1;
+    float peso2;
+    char resp;
+
+    do{
+        printf ("\n Digite o peso do primeiro pacote ");
+        scanf ("%f", &peso1);
+
+        printf ("\n Digite o peso do segundo pacote ");
+        scanf ("%f", &peso2);
+
+            if (peso1>peso2) {
+                printf ("\n O primeiro pacote é mais pesado que o segundo");
+                printf ("\n peso : %.2f", peso1);}
+
+                else { printf ("\n O segundo pacote é mais pesado que o primeiro ");
+                        printf ("\n peso : %.2f", peso2);
+                    }
+        printf ("\n Deseja realizar ou calculo ? [s/n] ");
+        scanf ("\n %c", &resp);
+
+    }while (resp == 's');
+    return 0;
+    }
+*/
+/*
+//EXERCICIO 5
+
+int main ()
+{
+  float pesomaior,peso=0,contador=1,numerodopacote;
+    printf ("\nPrograma que calcula o pacote mais pesado\n");
+    printf ("\n Atenção digite em Kg");
+
+    do {
+        printf ("\nDigite o peso do pacote %.f ", contador);
+        scanf ("%f", &peso);
+
+            if (contador==1){
+            pesomaior = peso;
+            }else if (peso>pesomaior){
+                pesomaior = peso;
+                numerodopacote = contador;
+            }
+    contador++;
+    }while (contador<=10);
+    printf ("\nO pacote mais pesado é o %.f que possui %.2f kg", numerodopacote, pesomaior);
+return 0;
+}*/
+
+/*
+int main ()
+{
+  float pesomenor;
+  float peso=0;
+  float contador=1;
+  float numerodopacote;
+  char resp= 's';
+
+    printf ("\nPrograma que calcula o pacote mais leve\n");
+    printf ("\n Atenção digite em Kg");
+
+    do {
+        printf ("\nDigite o peso do pacote %.f: ", contador);
+        scanf ("%f", &peso);
+
+            if (contador==1){
+            pesomenor = peso;
+            }else if (peso<pesomenor){
+                pesomenor = peso;
+                numerodopacote = contador;
+            }
+    contador++;
+
+        printf ("\n Deseja adicionar o peso de outro pacote?[s/n]");
+        scanf (" %c", &resp);
+
+    }while (resp =='s');
+    printf ("\nO pacote mais leve é o %.f que possui %.2f kg", numerodopacote, pesomenor);
+return 0;}
+//*/
+
+// EXERCICIO 7
+/*
+int main ()
+{
+    int somanum;
+    int usr;
+    char resp = 's';
+
+    do{
+    srand(time(NULL));
+    int num1 = rand ()%10;
+    int num2 = rand ()%10;
+    printf ("\nDigite o chute da soma: ");
+    scanf ("%i", &usr);
+
+    somanum = num1+num2;
+
+    if (usr==somanum)
+    {printf ("\nVoce acertou parabens");}
+    else {printf ("\nVoce Errou!!!");}
+    printf ("\n\nA soma dos numeros sorteados é %i", somanum);
+    printf ("\nDeseja jogar novamente?[s/n]");
+    scanf  (" %c", &resp);
+    }while (resp=='s');
+return 0;}
+*/
+//EXERCICIOS 8
+/*
+int main()
+{
+    int maximo;
+    int carga;
+    int cargasoma=0;
+    char resp='s';
+
+    printf ("\nCarga Maxima do caminhao ");
+    scanf  ("%d", &maximo);
+        do{
+            printf ("\ninforme o peso da carga: ");
+            scanf  ("%d", &carga);
+
+    cargasoma = (cargasoma+carga);
+
+printf ("\n%d", cargasoma);// teste de funcionalidade da variavel cargasoma
+        if (cargasoma >maximo)
+        {
+            resp = 'n';
+            printf ("\n\nCarga em excesso");
+            printf ("\no peso da carga excedeu %d, remova a ultima carga de peso %d\n\n\n",cargasoma-maximo,carga);
+        }
+                        else
+                        {
+                            printf ("\nAdicionar outra Carga?[s/n]");
+                            scanf  (" %c", &resp);
+                        }
+    }while(resp =='s');
+
+return 0;
+}
+*/
+// EXERCICIOS 09
+/*
+int main ()
+{
+    char perg1, perg2, perg3;
+    int acertos;
+
+    printf ("\nPERGUNTAS DE FISICA\n");
+    printf ("\n1-Em relação às teorias da relatividade restrita e geral, marque o que estiver correto:");
+    printf ("\na - A teoria da relatividade restrita estuda fenômenos em relação a referenciais não inerciais.");
+    printf ("\nb - A teoria da relatividade geral é uma segunda teoria feita por Einstein, na qual erros em relação à teoria da relatividade restrita foram corrigidos.");
+    printf ("\nc - A teoria da relatividade geral aborda fenômenos do ponto de vista não inercial.");
+    printf ("\nd - Ambas as teorias foram desenvolvidas na segunda metade do século XIX.");
+    printf ("\n\nRESPOSTA: ");
+    scanf  (" %c", &perg1);//resposta C
+      if (perg1=='c'){ acertos++;}
+    printf ("\n2-Sobre a teoria da relatividade, marque o que for verdadeiro:");
+    printf ("\na - O tempo é uma grandeza absoluta,");
+    printf ("\nb - Para objetos na velocidade da luz, ocorre a contração do tempo.");
+    printf ("\nc - Para objetos na velocidade da luz, ocorre a contração dos comprimentos.");
+    printf ("\nd - Para objetos na velocidade da luz, ocorre a dilatação dos comprimentos.\n ");
+    printf ("\n\nRESPOSTA: ");
+    scanf  (" %c", &perg2);// resposta C
+     if (perg2 =='c') {acertos++;}
+    printf ("\n3-Ao observarmos o espectro de radiação eletromagnética podemos encontrar fótons de alta energia de quais tipos?");
+    printf ("\na - Ondas de rádio");
+    printf ("\nb - Ultravioleta");
+    printf ("\nc - Micro-ondas");
+    printf ("\nd - Raios X");
+    printf ("\n\nRESPOSTA: ");
+    scanf  (" %c", &perg3);// resposta D
+      if (perg3== 'd') {acertos++;}
+
+        if (acertos==3){printf ("Parabens voce acertou as 3 perguntas");}
+        else{
+             printf ("\n\nVoce acertou %d questoes", acertos);
+             printf ("\nAs alternativas corretas eram:");
+            printf ("\n1 - C\n2 - C\n3 - D");}
+return 0;
+}*/
+
+// Exercicio 10
+
+/*Conta de bar, faça um programa que permita ao usuário controlar uma conta de bar.
+O programa deve ter um menu que permite ao usuário incluir mais pessoas na mesa,
+incluir mais custos, consultar o custo total da conta e o valor rateado (dividido)
+entre todos da mesa, incluído os 10% do garçom.*/
+/*
+int main ()
+{
+    int pesmesa,totalpes,menu;
+    float valorconta;
+    float total,garcom;
+    char resp = 's',resp3;
+
+        printf ("\n\t############################");
+        printf ("\n\tPROGRAMA DE CONTROLE DE MESA");
+        printf ("\n\t############################");
+
+    do
+    {   printf  ("\n\n\t  ** MENU **");
+        printf  ("\n\n1 - Incluir pessoas há mesa");
+        printf  ("\n2 - Incluir mais custos");
+        printf  ("\n3 - Consultar total da mesa");
+        printf  ("\nDigite a opção: ");
+        scanf   ("%d", &menu);
+
+        switch (menu)
+        {
+
+            case 1: printf ("\nAdicione a quantidade de pessoas: ");
+                    scanf   ("%d", &pesmesa);
+                    totalpes = (totalpes + pesmesa); break;
+
+            case 2: printf ("\nAdicione o valor: ");
+                    scanf   ("%f", &valorconta);
+                    total = total+valorconta; break;
+            case 3: printf  ("\n***************");
+                    printf  ("\nTOTAL: %.2f", total);
+                    printf  ("\n***************");
+                    printf  ("\n\nDeseja encerrar o pedido e dividir o valor entre as pessoas da mesa ?[s/n] ");
+                    scanf   (" %c", &resp3);
+
+                        if (resp3=='s')
+                        {
+                            garcom = total*0.1;
+                            printf ("\nValor dividido sem a taxa do Garçom: %.2f\n", total/totalpes);
+                            printf ("\nTaxa do Garçom: %.2f\n", garcom);
+                            printf ("\nValor total mais Taxa do Garçom: %.2f",(total+garcom)/totalpes);
+                            printf ("\n%.2f\n\n", garcom);
+                            resp = 'n';
+                        }break;
+        }
+    }while (resp=='s');
+
+return 0;
+}*/
+/*
+int main ()
+{
+    int pesmesa,totalpes,menu;
+    float valorconta;
+    float total,garcom;
+    char resp = 's',resp3;
+
+        printf ("\n\t############################");
+        printf ("\n\tPROGRAMA DE CONTROLE DE MESA");
+        printf ("\n\t############################");
+
+
+        printf  ("\n\n\t  ** MENU **");
+        printf  ("\n\n1 - Incluir pessoas há mesa");
+        printf  ("\n2 - Incluir mais custos");
+        printf  ("\n3 - Consultar total da mesa");
+        printf  ("\nDigite a opção: ");
+        scanf   ("%d", &menu);
+
+        switch (menu)
+        {
+
+            case 1: printf ("\nAdicione a quantidade de pessoas: ");
+                    scanf   ("%d", &pesmesa);
+                    totalpes = (totalpes + pesmesa); break;
+
+            case 2: printf ("\nAdicione o valor: ");
+                    scanf   ("%f", &valorconta);
+                    total = total+valorconta; break;
+            case 3: printf  ("\n***************");
+                    printf  ("\nTOTAL: %.2f", total);
+                    printf  ("\n***************");
+                    printf  ("\n\nDeseja encerrar o pedido e dividir o valor entre as pessoas da mesa ?[s/n] ");
+                    scanf   (" %c", &resp3);
+
+                        if (resp3=='s')
+                        {
+                            garcom = total*0.1;
+                            printf ("\nValor dividido sem a taxa do Garçom: %.2f\n", total/totalpes);
+                            printf ("\nTaxa do Garçom: %.2f\n", garcom);
+                            printf ("\nValor total mais Taxa do Garçom: %.2f",(total+garcom)/totalpes);
+                            printf ("\n%.2f\n\n", garcom);
+                            resp = 'n';
+                        }break;
+        }
+
+return 0;
+}
+*/
