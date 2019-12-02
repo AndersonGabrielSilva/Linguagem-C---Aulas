@@ -1,0 +1,68 @@
+#include <stdio.h>
+#include <stdlib.h>
+// Laços de repetição Aula 04
+
+// Função   while   ( o teste logico é feito no inicio do bloco )
+
+/*
+int main()
+{
+    char resposta ='s';
+    while (resposta == 's')
+ {
+    printf ("\nVoce quer brincar na neve (s/n)");
+    scanf (" %c", &resposta);
+
+        if (resposta == 's')
+        {
+            printf ("\nBrincando na neve...");
+        }
+            else {
+            printf ("\nBrincamos outra hora entao. ");
+            }
+ }
+ return 0;
+}
+*/
+
+//Função      do while   ( O teste logico é feito no final do bloco ), eu o ultilizo quando eu quero que meu bloco de codigo,
+//se repida pelo menos uma vez
+
+/*
+int main()
+{
+    char resposta ='s';
+
+ do {
+    printf ("\nVoce quer brincar na neve (s/n)");
+    scanf (" %c", &resposta);
+
+        if (resposta == 's')
+        {
+            printf ("\nBrincando na neve...");
+        }
+            else {
+            printf ("\nBrincamos outra hora entao. ");
+            }
+ }while (resposta == 's');
+
+ return 0;
+
+}
+*/
+
+// função     for
+
+// for ( condição de inicio ; condição de termino ; incremento (o que ele vai fazer em cada interação ))
+
+
+int main (){
+    int x;
+
+    for (x=0;x<100;x+=2)
+    {
+        printf ("\t%d", x);
+    }
+return 0;
+}
+
